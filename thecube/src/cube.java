@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class cube {
 
-    static String[][] theCube = { {"r0", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"},
-                                  {"b0", "b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"},
-                                  {"o0", "o1", "o2", "o3", "o4", "o5", "o6", "o7", "o8"},
-                                  {"g0", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"},
-                                  {"y0", "y1", "y2", "y3", "y4", "y5", "y6", "y7", "y8"},
-                                  {"w0", "w1", "w2", "w3", "w4", "w5", "w6", "w7", "w8"},
+    static String[][] theCube = { {"r", "r", "r", "r", "r", "r", "r", "r", "r"},
+                                  {"b", "b", "b", "b", "b", "b", "b", "b", "b"},
+                                  {"o", "o", "o", "o", "o", "o", "o", "o", "o"},
+                                  {"g", "g", "g", "g", "g", "g", "g", "g", "g"},
+                                  {"y", "y", "y", "y", "y", "y", "y", "y", "y"},
+                                  {"w", "w", "w", "w", "w", "w", "w", "w", "w"},
                                 };
 
 
@@ -436,6 +436,8 @@ public class cube {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the cube.");
+        System.out.println();
+        printCube();
         System.out.println("Use commands u, d, r, l, f, & b to make clockwise turns.");
         System.out.println("Use commands u', d', r', l', f', & b' to make counter-clockwise turns.");
         System.out.println("Use command s to reveal the sequence of move required to restore the cube to its solved state.");
