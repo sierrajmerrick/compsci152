@@ -13,6 +13,8 @@ public class cube {
 
     
     public static void printCube() {
+        RubiksCube Cube = new RubiksCube();
+        Cube.show(theCube);
         for (int i = 0; i < theCube.length; i++){
             for(int j = 0; j < theCube[i].length; j++){
                 if(j==3 || j == 6){
